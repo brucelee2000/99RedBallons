@@ -13,6 +13,11 @@
 		A764B4AB1A2BEDA20073A006 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A764B4AA1A2BEDA20073A006 /* Images.xcassets */; };
 		A764B4AE1A2BEDA20073A006 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A764B4AC1A2BEDA20073A006 /* LaunchScreen.xib */; };
 		A764B4BA1A2BEDA20073A006 /* _9RedBallonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A764B4B91A2BEDA20073A006 /* _9RedBallonsTests.swift */; };
+		A764B4C51A2BF2360073A006 /* Balloon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A764B4C41A2BF2360073A006 /* Balloon.swift */; };
+		A764B4CB1A2BFBB10073A006 /* balloon0.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A764B4C71A2BFBB10073A006 /* balloon0.jpeg */; };
+		A764B4CC1A2BFBB10073A006 /* balloon1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A764B4C81A2BFBB10073A006 /* balloon1.jpeg */; };
+		A764B4CD1A2BFBB10073A006 /* balloon2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A764B4C91A2BFBB10073A006 /* balloon2.jpeg */; };
+		A764B4CE1A2BFBB10073A006 /* balloon3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A764B4CA1A2BFBB10073A006 /* balloon3.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		A764B4B31A2BEDA20073A006 /* 99RedBallonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 99RedBallonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A764B4B81A2BEDA20073A006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A764B4B91A2BEDA20073A006 /* _9RedBallonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _9RedBallonsTests.swift; sourceTree = "<group>"; };
+		A764B4C41A2BF2360073A006 /* Balloon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Balloon.swift; sourceTree = "<group>"; };
+		A764B4C71A2BFBB10073A006 /* balloon0.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = balloon0.jpeg; sourceTree = "<group>"; };
+		A764B4C81A2BFBB10073A006 /* balloon1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = balloon1.jpeg; sourceTree = "<group>"; };
+		A764B4C91A2BFBB10073A006 /* balloon2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = balloon2.jpeg; sourceTree = "<group>"; };
+		A764B4CA1A2BFBB10073A006 /* balloon3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = balloon3.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +90,7 @@
 				A764B4A31A2BEDA20073A006 /* AppDelegate.swift */,
 				A764B4A51A2BEDA20073A006 /* ViewController.swift */,
 				A764B4A71A2BEDA20073A006 /* Main.storyboard */,
+				A764B4C31A2BF2170073A006 /* Model */,
 				A764B4AA1A2BEDA20073A006 /* Images.xcassets */,
 				A764B4AC1A2BEDA20073A006 /* LaunchScreen.xib */,
 				A764B4A11A2BEDA20073A006 /* Supporting Files */,
@@ -90,6 +101,7 @@
 		A764B4A11A2BEDA20073A006 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A764B4C61A2BFBB10073A006 /* 99RedBalloonPics */,
 				A764B4A21A2BEDA20073A006 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +122,25 @@
 				A764B4B81A2BEDA20073A006 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A764B4C31A2BF2170073A006 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A764B4C41A2BF2360073A006 /* Balloon.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A764B4C61A2BFBB10073A006 /* 99RedBalloonPics */ = {
+			isa = PBXGroup;
+			children = (
+				A764B4C71A2BFBB10073A006 /* balloon0.jpeg */,
+				A764B4C81A2BFBB10073A006 /* balloon1.jpeg */,
+				A764B4C91A2BFBB10073A006 /* balloon2.jpeg */,
+				A764B4CA1A2BFBB10073A006 /* balloon3.jpeg */,
+			);
+			path = 99RedBalloonPics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +223,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A764B4CD1A2BFBB10073A006 /* balloon2.jpeg in Resources */,
+				A764B4CE1A2BFBB10073A006 /* balloon3.jpeg in Resources */,
+				A764B4CB1A2BFBB10073A006 /* balloon0.jpeg in Resources */,
 				A764B4A91A2BEDA20073A006 /* Main.storyboard in Resources */,
 				A764B4AE1A2BEDA20073A006 /* LaunchScreen.xib in Resources */,
 				A764B4AB1A2BEDA20073A006 /* Images.xcassets in Resources */,
+				A764B4CC1A2BFBB10073A006 /* balloon1.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A764B4A61A2BEDA20073A006 /* ViewController.swift in Sources */,
+				A764B4C51A2BF2360073A006 /* Balloon.swift in Sources */,
 				A764B4A41A2BEDA20073A006 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
