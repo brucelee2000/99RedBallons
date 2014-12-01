@@ -50,9 +50,18 @@ class ViewController: UIViewController {
     }
     
     @IBAction func nextBalloonButtonPressed(sender: UIBarButtonItem) {
-        currentIndex++
-        balloonNumberLabel.text = "\(balloonArray[currentIndex].number) Balloons"
-        myImageView.image = balloonArray[currentIndex].image
+        if currentIndex == 99 {
+            currentIndex = 0
+        } else {
+            currentIndex++
+        }
+        
+        // Add transition
+        UIView.transitionWithView(self.view, duration: 1, options: UIViewAnimationOptions.TransitionFlipFromBottom, animations: {
+            self.balloonNumberLabel.text = "\(self.balloonArray[self.currentIndex].number) Balloons"
+            self.myImageView.image = self.balloonArray[self.currentIndex].image
+            }, completion: { (finished:Bool) -> () in })
+
     }
 
 }
